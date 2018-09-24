@@ -135,3 +135,7 @@ Author
 ------
 
 Takahiko Kawasaki, [Authlete, Inc.](https://www.authlete.com/)
+
+Maven from Github
+----
+https://jitpack.io/
