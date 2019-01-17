@@ -2965,4 +2965,16 @@ public enum CountryCode
 
         return list;
     }
+
+    private static List<CountryCodeEntity> allCountries = new ArrayList<>(CountryCode.values().length);
+
+    static {
+        for (CountryCode cc: CountryCode.values()) {
+            allCountries.add(new CountryCodeEntity(cc.getName(),cc.getAlpha2(),cc.getAlpha3(),cc.getNumeric()));
+        }
+    }
+
+    public static List<CountryCodeEntity> getAllCountries(){
+        return allCountries;
+    }
 }
