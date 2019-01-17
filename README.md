@@ -34,15 +34,15 @@ Maven
 </dependency>
 ```
 
-
-Gradle
-------
-
-```gradle
-dependencies {
-    compile 'com.neovisionaries:nv-i18n:1.23'
-}
+go to https://jitpack.io/ for build a package using github then :
+```xml
+  <dependency>
+            <groupId>com.github.jgarbora</groupId>
+            <artifactId>nv-i18n</artifactId>
+            <version>87733a1042</version>
+  </dependency>
 ```
+
 
 
 OSGi
