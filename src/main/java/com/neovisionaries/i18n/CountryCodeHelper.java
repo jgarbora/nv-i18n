@@ -4,7 +4,7 @@ import org.apache.commons.lang3.StringUtils;
 
 public class CountryCodeHelper {
 
-    public boolean areEquals(String code, CountryCode countryCode) {
+    public static boolean areEquals(String code, CountryCode countryCode) {
 
         if (countryCode == null) {
             return false;
