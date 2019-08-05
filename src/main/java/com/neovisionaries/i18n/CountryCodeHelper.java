@@ -21,12 +21,12 @@ public class CountryCodeHelper {
             throw new CountryNotFoundException();
         } else {
 
-            CountryCode mapped = CountryCode.getByAlpha2Code(code);
+            CountryCode mapped = CountryCode.getByAlpha2Code(code.toUpperCase());
             if (mapped != null) {
                 return mapped;
             }
 
-            mapped = CountryCode.getByAlpha3Code(code);
+            mapped = CountryCode.getByAlpha3Code(code.toUpperCase());
             if (mapped != null) {
                 return mapped;
             }
