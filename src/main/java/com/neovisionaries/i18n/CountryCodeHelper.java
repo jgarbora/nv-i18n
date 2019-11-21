@@ -39,4 +39,17 @@ public class CountryCodeHelper {
             throw new CountryNotFoundException();
         }
     }
+
+    public static CountryCode map(String code, CountryCode defaultValue) {
+        if (StringUtils.isEmpty(code)) {
+            return defaultValue;
+        }
+        try {
+            return map(code);
+        } catch (Exception e) {
+            return defaultValue;
+        }
+    }
+
+
 }
